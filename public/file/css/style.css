@@ -1,0 +1,883 @@
+p {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+a {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.input-group {
+    margin-top: 15px;
+}
+
+.row {
+    width: 100%;
+}
+
+.dropdown {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.container-fluid.main {
+    position: relative;
+    /* To make the navbar positions relative to this container */
+    padding: 0;
+}
+
+.carousel .background::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: #00000077;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Menu When Scroll */
+.fixed {
+    position: fixed;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: #01579b;
+    -webkit-transition: top 400ms ease 0s;
+    -moz-transition: top 400ms ease 0s;
+    -o-transition: top 400ms ease 0s;
+    -ms-transition: top 400ms ease 0s;
+    transition: top 400ms ease 0s;
+    box-shadow: 0 0 40px #222;
+    -webkit-box-shadow: 0 0 40px #222;
+    -moz-box-shadow: 0 0 40px #222;
+}
+
+.fixed .navbar-brand {
+    font-family: Verdana;
+    color: #ffffff;
+    padding-right: 30px;
+}
+
+.fixed .navbar-nav>li>a {
+    color: #ffffffab;
+    padding-top: 18px;
+}
+
+.fixed .navbar-nav>li>a:hover,
+.fixed .navbar-nav>li>a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.fixed .navbar-toggle {
+    border-color: transparent;
+}
+
+.fixed .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.fixed .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.fixed .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+
+
+/* navbar */
+
+.darkheader {
+    background-color: #01579b;
+    color: #ffffff;
+}
+
+.navbar-default {
+    background-image: none;
+    background-color: transparent;
+    /* Make the menu become transparent */
+    border-radius: 0px;
+    border: 0;
+    box-shadow: none;
+    padding: 10px;
+    position: absolute;
+    /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    position: fixed;
+    /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+.navbar-default .dropdown-toggle:focus {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+.navbar-default .dropdown:hover {
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-brand {
+    font-family: Verdana;
+    color: #ffffff;
+    font-size: 20px;
+    border-right: #ffffff 1px solid !important;
+    padding-right: 30px;
+}
+
+.navbar-default .navbar-left {
+    padding-left: 20px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffffab;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+
+
+/* akhir navbar */
+
+/* navbar dark */
+.navbar-dark {
+    background-color: #01579b;
+    /* Make the menu become transparent */
+    border-radius: 0px;
+    border: 0;
+    box-shadow: none;
+    padding: 10px;
+    position: absolute;
+    /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+.navbar-dark .dropdown-toggle:focus {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+.navbar-dark .dropdown:hover {
+    background-color: transparent !important;
+}
+
+.navbar-dark .navbar-brand {
+    font-family: Verdana;
+    color: #ffffff;
+    font-size: 20px;
+    border-right: #ffffff 1px solid !important;
+    padding-right: 30px;
+}
+
+.navbar-dark .navbar-left {
+    padding-left: 20px;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-nav>li>a {
+    color: #ffffffab;
+}
+
+.navbar-dark .navbar-nav>li>a:hover,
+.navbar-dark .navbar-nav>li>a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-dark .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+/* akhir navbar dark */
+
+
+/* carousel */
+.carousel .background {
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.carousel .background.a {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+        url("../img/1.jpg");
+}
+
+.carousel .background.b {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+        url("../img/2.jpg");
+}
+
+.carousel .background.c {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+        url("../img/3.jpg");
+}
+
+.carousel .background.d {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+        url("../img/4.jpg");
+}
+
+.carousel .background.e {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+        url("../img/5.jpg");
+}
+
+.carousel .background.f {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+        url("../img/6.jpg");
+}
+
+.carousel .background.g {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+        url("../img/7.jpg");
+}
+
+.carousel .carousel-control {
+    margin-top: 350px;
+}
+
+.carousel-control.left {
+    background: none;
+    padding: 0;
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-size: 1px 1px;
+    z-index: 1;
+}
+
+.carousel-control.right {
+    background: none;
+    padding: 0;
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-size: 1px 1px;
+    z-index: 1;
+}
+
+.carousel .ti-angle-left {
+    font-size: 20px;
+    color: #38a9ffda;
+}
+
+.carousel .ti-angle-right {
+    font-size: 20px;
+    color: #38a9ffda;
+}
+
+/* akhir carousel */
+
+
+/* isi carousel */
+.covertext {
+    position: absolute;
+    /* To make the div to be place anywhere. It is out of the document flow */
+    top: 170px;
+    /* The distance between the div with the top of document */
+    left: 0px;
+    /* Make the div full width */
+    right: 0px;
+    /* Make the div full width */
+    margin-left: 40px;
+}
+
+.covertext .dana {
+    color: #38a9ffda;
+    padding: 0;
+}
+
+.title {
+    font-family: Verdana;
+    font-weight: 600;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: Verdana;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 1.0);
+    margin-top: 170px;
+}
+
+.subs1 {
+    float: left;
+    text-align: center;
+}
+
+.subs2 {
+    float: left;
+    text-align: center;
+}
+
+.dana {
+    text-align: center;
+    margin-top: -50px;
+    padding-left: 120px;
+}
+
+.dana .btn-lg {
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 20px;
+    background-image: none;
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    margin-left: 600px;
+}
+
+.dana .ti-arrow-right {
+    padding-left: 20px;
+}
+
+.btn,
+.btn:hover {
+    border-radius: 30px;
+    background-image: none;
+    background-color: #01579b;
+    border-color: #01579b;
+    color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn,
+.btn:focus {
+    border-radius: 30px;
+    background-image: none;
+    background-color: #01579b;
+    border-color: #01579b;
+    color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: none;
+    outline: none;
+}
+
+.text-count {
+    color: #ffffffce;
+    font-size: 30px;
+    margin-top: 140px;
+}
+
+.text-pesan {
+    color: #ffffffce;
+    font-size: 18px;
+}
+
+/* akhir isi carousel */
+
+/* footer */
+.section {
+    background-color: #fffefe;
+}
+
+.footer {
+    height: 90px;
+    background-color: #fffefe;
+}
+
+.footer .brand-footer {
+    color: #01579b;
+    font-size: 25px;
+    font-family: Verdana;
+    padding-top: 30px;
+}
+
+.footer p {
+    color: #01579b;
+    font-size: 25px;
+    font-family: Verdana;
+    padding-top: 20px;
+}
+
+.footer .footer-txt {
+    color: #222;
+    font-size: 15px;
+}
+
+.social-icons a {
+    background-color: transparent;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.05);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 0.3rem;
+    border-radius: 5px;
+    color: #01579b;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    text-decoration: none;
+    color: #01579b;
+    border: 1px solid #01579b;
+}
+
+footer {
+    background-color: #eeeeee;
+    height: 200px;
+}
+
+.end .ft,
+.end .lock {
+    padding-top: 40px;
+}
+
+.end .brand-explain {
+    color: #01579b;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.end .explain {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lock-1,
+.lock-2,
+.lock-3 {
+    font-size: 16px;
+}
+
+.ti-location-pin,
+.ti-email,
+.ti-headphone-alt {
+    font-size: 18px;
+    color: #01579b;
+}
+
+/* akhir footer */
+
+/* modal */
+.submit-mod,
+.submit-mod-tambah {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 3px;
+}
+
+.submit-mod-tambah {
+    margin-top: 0px;
+    position: relative;
+    bottom: 10px;
+}
+
+.submit-mod:hover,
+.submit-mod-tambah:hover {
+    background-color: #014a83;
+    border-radius: 3px;
+}
+
+/* akhir modal */
+
+/* inputan */
+section {
+    background-color: #f1f1f1;
+}
+
+.ti-eye {
+    float: right !important;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    bottom: 27px;
+    right: 10px;
+}
+
+.login {
+    width: 100%;
+    padding-top: 13%;
+    padding-bottom: 13%;
+}
+
+.input img {
+    margin-top: 20px;
+    width: 350px;
+}
+
+.submit {
+    margin-top: 10px;
+    padding-left: 118px;
+    padding-right: 118px;
+    border-radius: 3px;
+}
+
+.submit:hover {
+    background-color: #014a83;
+    border-radius: 3px;
+}
+
+.txt {
+    font-size: 15px;
+    color: #747474;
+}
+
+.click a {
+    color: #1986da;
+    margin-left: 7px !important;
+    font-size: 17px;
+}
+
+.click a:hover {
+    color: #01579b;
+    text-decoration: none;
+}
+
+.panel-default {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.411);
+}
+
+.panel-body {
+    padding: 30px;
+}
+
+.text {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+/* akhir inputan */
+
+/* donatur-index */
+.ti-align-justify {
+    font-size: 25px;
+}
+
+/* akhir donatur-index */
+
+@media (max-width:991px) {
+    .carousel .background {
+        background-size: cover;
+        height: 820px;
+        /* To make the background image looks good */
+    }
+
+    .carousel-control.left {
+        display: none;
+    }
+
+    .carousel-control.right {
+        display: none;
+    }
+
+    .carousel .background::after {
+        width: 100%;
+        height: 30%;
+    }
+
+    .covertext {
+        position: absolute;
+        /* To make the div to be place anywhere. It is out of the document flow */
+        top: 200px;
+        /* The distance between the div with the top of document */
+        left: 0px;
+        /* Make the div full width */
+        right: 0px;
+        /* Make the div full width */
+        margin-left: 0px;
+    }
+
+    .subtitle {
+        font-family: Verdana;
+        font-size: 35px;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 3px 1px 1px rgba(0, 0, 0, 1.0);
+        margin-top: 20px;
+    }
+
+    .subs1 {
+        float: left;
+    }
+
+    .subs2 {
+        float: left;
+    }
+
+    .dana {
+        text-align: center;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .dana .btn-lg {
+        border-radius: 30px;
+        padding: 15px 25px;
+        font-size: 15px;
+        background-image: none;
+        background-color: transparent;
+        border-color: #ffffff;
+        color: #ffffff;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .btn,
+    .btn:hover {
+        border-radius: 30px;
+        background-image: none;
+        background-color: #024980;
+        border-color: #01579b;
+        color: #ffffff;
+        margin-bottom: 20px;
+        box-shadow: none;
+        outline: none;
+    }
+
+    .navbar-collapse {
+        background-color: #ffffff;
+    }
+
+    .navbar-collapse .navbar-left>li>a {
+        color: rgba(31, 153, 252, 0.671) !important;
+    }
+
+    .navbar-collapse .navbar-left>li>a:focus {
+        color: #01579b !important;
+    }
+
+    .navbar-collapse .navbar-left>li>a:hover {
+        color: #01579b !important;
+    }
+
+    .navbar-collapse .navbar-right>li>a {
+        color: rgba(31, 153, 252, 0.671) !important;
+        padding-left: 35px;
+    }
+
+    .navbar-collapse .navbar-right>li>a:focus {
+        color: #01579b !important;
+        padding-left: 35px;
+    }
+
+    .navbar-collapse .navbar-right>li>a:hover {
+        color: #01579b !important;
+        padding-left: 35px;
+    }
+
+    .fixed .navbar-right>li>a {
+        color: rgba(31, 153, 252, 0.671) !important;
+        padding-left: 35px;
+    }
+
+    .fixed .navbar-right>li>a:focus {
+        color: #01579b !important;
+        padding-left: 35px;
+    }
+
+    .fixed .navbar-right>li>a:hover {
+        color: #01579b !important;
+        padding-left: 35px;
+    }
+
+    .social-icons {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-right: 20px !important;
+    }
+
+    .row {
+        width: 100%;
+        padding-top: 30%;
+        padding-bottom: 0;
+    }
+
+    .container .input {
+        margin-top: 500px;
+    }
+
+    .satu {
+        color: #ffffffce;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .dua {
+        color: #ffffffce;
+        font-size: 20px;
+    }
+
+    .tiga {
+        display: none;
+    }
+
+    .empat {
+        display: none;
+    }
+
+    .footer {
+        height: 130px;
+    }
+
+    .footer .brand-footer,
+    .footer p {
+        padding-top: 0px;
+        position: relative;
+        bottom: 80px;
+    }
+
+    footer {
+        background-color: #eeeeee;
+        height: 400px;
+    }
+
+    .end .ft,
+    .end .lock {
+        padding-left: 10px;
+        padding-top: 20px;
+        text-align: center;
+        position: relative;
+        bottom: 80px;
+    }
+
+    /* login page */
+    .panel {
+        margin-left: 13px;
+    }
+
+    .submit {
+        background-color: #01579b;
+        border-radius: 3px;
+    }
+
+    .login {
+        width: 100%;
+        padding-top: 45%;
+        padding-bottom: 33%;
+    }
+
+    .modal {
+        margin-top: 30px;
+    }
+
+    .submit-mod,
+    .submit-mod-tambah {
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 3px;
+        background-color: #01579b;
+    }
+
+    .submit-mod-tambah {
+        margin-top: 0px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .submit-mod:hover,
+    .submit-mod-tambah:hover {
+        background-color: #014a83;
+        border-radius: 3px;
+    }
+
+    /* akhir login */
+
+    /* donasi page */
+    .submit {
+        margin-top: 10px;
+        padding-left: 42%;
+        padding-right: 42%;
+        border-radius: 3px;
+    }
+
+    .submit:hover {
+        border-radius: 3px;
+    }
+
+    .input img {
+        margin-top: 20px;
+        width: 150px;
+        padding-bottom: 20px;
+        margin: 0px;
+        margin-left: 75px;
+    }
+
+    /* donasi page */
+}
